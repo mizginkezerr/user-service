@@ -1,0 +1,12 @@
+apps:
+  - name: "apiBase"
+    script: moleculer-runner
+    exec_mode: cluster
+    instances: 1
+    autostart: true
+    interpreter: npm
+    args:
+      - services/**/api.service.js
+    env:
+      NODE_ENV: production
+      NODE_ID: apiBase

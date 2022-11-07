@@ -1,0 +1,24 @@
+{
+	"ENV": "test",
+	"PORT": 4000,
+	"REDIS": {
+		"host": "192.168.5.117",
+		"port": "6379",
+		"password": ""
+	},
+	"MONGODB": {
+		"is_active": true,
+		"URL": "mongodb+srv://fraud:85zvVfyzop0RBfpP@cluster0.quysvzj.mongodb.net/?retryWrites=true&w=majority"
+	},
+	"JWT_SECRET": "5ca854e9a10491b53cab2d6a885aa9bc",
+	"RULES": {
+		"default": {
+			"check_length": 3,
+			"fail_count": 5,
+			"success_count": 5,
+			"ip_count": 3,
+			"card_count": 2,
+			"total_volume": 5000
+		}
+	}
+}

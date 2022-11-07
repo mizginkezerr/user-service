@@ -1,0 +1,12 @@
+apps:
+  - name: "userBase"
+    script: moleculer-runner
+    exec_mode: cluster
+    instances: 1
+    autostart: true
+    interpreter: npm
+    args:
+      - services/**/users.service.js
+    env:
+      NODE_ENV: production
+      NODE_ID: userBase
